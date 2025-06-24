@@ -17,7 +17,7 @@ with col1:
         # Insert daily summary logic here
         payload = {"phone": phone, "query": query, "source": "streamlit"}
         response = requests.post(Make_url, json=payload)
-        st.write(f{response.text})
+        st.write(response.text, unsafe_allow_html=True)
 
 with col2:
     if st.button("Weekly Report"):
