@@ -20,16 +20,16 @@ with col1:
         payload = {"phone": phone, "query": query, "source": "streamlit"}
         response = requests.post(Make_url, json=payload)
         report = response.text
-        timeframe = "daily"
+        timeframe = "Daily"
 
 with col2:
     if st.button("Weekly Report"):
         payload = {"phone": phone, "query": query, "source": "streamlit"}
         response = requests.post(Make_url, json=payload)
         report = response.text
-        timeframe = "weekly"
+        timeframe = "Weekly"
 
 st.markdown("<br>", unsafe_allow_html=True)
 if report:
-    st.write(timeframe +"Pensive Report")
+    st.write(timeframe +" " + "Pensive Report")
     st.write(report, unsafe_allow_html=True)
