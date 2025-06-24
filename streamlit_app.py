@@ -13,6 +13,9 @@ phone = st.text_input("📱 Enter your phone number (+437241xxxx)")
 query = st.text_input("Focus of Report? (blank if none)")
 col1, col2 = st.columns(2)
 
+report = None
+timeframe = ""
+
 # Button logic
 with col1:
     if st.button("Daily Report"):
