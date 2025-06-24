@@ -9,7 +9,7 @@ Make_url = "https://hook.us2.make.com/aseggcntpt5uilz5091p7rrjno87ooyi"
 
 # Columns to place buttons side by side
 st.markdown("<br>", unsafe_allow_html=True)
-phone = st.text_input("📱 Enter your phone number (+437241xxxx)")
+phone = st.text_input("📱 Enter your phone number (+1437241xxxx)")
 query = st.text_input("Focus of Report? (blank if none)")
 col1, col2 = st.columns(2)
 
