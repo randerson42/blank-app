@@ -1,8 +1,8 @@
 import streamlit as st
 import requests
 
-st.title("Pensive.AI 🫐")
-st.write("Report Generator")
+st.title("Pensive.AI \u00A0 🫐🍒")
+st.header("Report Generator")
 
 Make_url = "https://hook.us2.make.com/aseggcntpt5uilz5091p7rrjno87ooyi"
 
