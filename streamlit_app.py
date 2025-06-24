@@ -20,14 +20,14 @@ timeframe = ""
 with col1:
     if st.button("Daily Report"):
         # Insert daily summary logic here
-        payload = {"phone": phone, "query": query, "source": "streamlit"}
+        payload = {"phone": phone, "query": query, "time": "daily"}
         response = requests.post(Make_url, json=payload)
         report = response.text
         timeframe = "Daily"
 
 with col2:
     if st.button("Weekly Report"):
-        payload = {"phone": phone, "query": query, "source": "streamlit"}
+        payload = {"phone": phone, "query": query, "time": "weekly"}
         response = requests.post(Make_url, json=payload)
         report = response.text
         timeframe = "Weekly"
