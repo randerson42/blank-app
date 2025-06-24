@@ -1,12 +1,13 @@
 import streamlit as st
 import requests
 
-st.title("Pensive.AI 🍒🍎🫐 - Report Generator")
+st.title("Pensive.AI 🍒🍎🫐")
 
 Make_url = "https://hook.us2.make.com/aseggcntpt5uilz5091p7rrjno87ooyi"
 
 # Columns to place buttons side by side
 st.markdown("<br>", unsafe_allow_html=True)
+phone = st.text_input("📱 Enter your phone number")
 col1, col2 = st.columns(2)
 
 # Button logic
