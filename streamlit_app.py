@@ -2,9 +2,8 @@ import streamlit as st
 import requests
 
 st.title("Pensive.AI \u00A0 🫐🍒")
-st.markdown("""
-<h3 style='margin-top: 0;'>Report Generator</h1>
-""", unsafe_allow_html=True)
+st.header("Report Generator")
+st.markdown("<br>", unsafe_allow_html=True)
 
 Make_url = "https://hook.us2.make.com/aseggcntpt5uilz5091p7rrjno87ooyi"
 
@@ -20,9 +19,10 @@ with col1:
         # Insert daily summary logic here
         payload = {"phone": phone, "query": query, "source": "streamlit"}
         response = requests.post(Make_url, json=payload)
-        st.write(response.text, unsafe_allow_html=True)
 
 with col2:
     if st.button("Weekly Report"):
         st.write(f"🗓️ You clicked Weekly Summary for:")
         # Insert weekly summary logic here
+
+st.write(response.text, unsafe_allow_html=True)
