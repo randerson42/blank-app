@@ -29,7 +29,7 @@ with col2:
         report = response.text
         timeframe = "Weekly"
 
-st.markdown("<br>", unsafe_allow_html=True)
 if report:
+    st.markdown("<br>", unsafe_allow_html=True)
     st.write(timeframe +" " + "Pensive Report")
     st.write(report, unsafe_allow_html=True)
