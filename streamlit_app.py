@@ -3,6 +3,9 @@ import requests
 
 st.title("Pensive.AI \u00A0 🫐🍒")
 st.header("Report Generator")
+st.markdown("""
+<h1 style='margin-bottom: 0;'>Pensive.AI 🍒🍎🍇 – Report Generator</h1>
+""", unsafe_allow_html=True)
 
 Make_url = "https://hook.us2.make.com/aseggcntpt5uilz5091p7rrjno87ooyi"
 
