@@ -23,7 +23,3 @@ with col2:
     if st.button("Weekly Report"):
         st.write(f"🗓️ You clicked Weekly Summary for:")
         # Insert weekly summary logic here
-
-# Optional debug output
-st.markdown("<br>", unsafe_allow_html=True)
-st.write("Report:", user_input)
