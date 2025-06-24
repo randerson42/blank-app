@@ -31,5 +31,5 @@ with col2:
 
 st.markdown("<br>", unsafe_allow_html=True)
 if report:
-    st.write(timeframe "Pensive Report")
+    st.write(timeframe +"Pensive Report")
     st.write(report, unsafe_allow_html=True)
